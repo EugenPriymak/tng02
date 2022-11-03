@@ -23,6 +23,10 @@ p {
     max-width: 1170px;
     margin: 0 auto;
 }
+
+/* ====== header ======*/
+
+
 .header {
     width: 100%;
     height: 100px;
@@ -59,6 +63,10 @@ p {
     opacity: 1;
 
 }
+
+/* ====== Intro ======*/
+
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -119,4 +127,35 @@ margin-bottom: 60px;
 
 .btn--red:hover{
     background-color: #dd3434;
+}
+
+/* ====== Features ======*/
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
+
+}
+.features__item {
+    margin: 25px 0;
+    padding: 0 40px;
+    width: 33.333333%;
+    text-align: center;
+}
+.features__icon {
+    margin-bottom: 25px;
+}
+.features__title {
+    margin-bottom: 20px;
+    
+    font-size: 14px;
+    font-weight: 700;
+    color: #2d3033;
+    text-transform: uppercase;
+}
+.features__text {
+    color: #6c7279;
+    line-height: 1.5;
+    font-size: 14px;
 }
