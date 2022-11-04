@@ -495,6 +495,21 @@ margin-bottom: 60px;
     .social {
         justify-content: center;
     }
+    /* Reviews */
+    .reviews__photo {
+        margin: 15px 0 40px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .reviews__content {
+        padding-left: 0;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    .reviews__img {
+        /* min-width: 991px;
+        right: -15px; */
+    }
 }
 
 
@@ -535,4 +550,41 @@ margin-bottom: 60px;
         .team__item {
             width: 100%;
         }
+        /* Reviews */
+        .reviews__text {
+            font-size: 25px;
+        }
+        /* Btn */
+        .btn--long {
+            min-width: 260px;
+
+        }
+
+        /* Download */
+        .download {
+            margin: 50px 0;
+        }
+        .download__title {
+            font-size: 24px;
+        }
+        /* Footer */
+        .footer__inner {
+            padding: 30px 0;
+        }
+        .footer__block {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 30px;
+        }
+        .footer__block:last-child {
+            margin-bottom: 0;
+        }
+}
+
+@media (max-width: 414px) {
+    /* Reviews */
+    .reviews__img {
+        right: -100px;
+    }
 }
