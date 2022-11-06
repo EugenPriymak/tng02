@@ -322,7 +322,10 @@ margin-bottom: 60px;
     background-color: #53354a;
     overflow: hidden;
 }
-
+.reviews__slider {
+    height: 500px;
+    overflow: hidden;
+}
 .reviews__item {
     display: flex;
     flex-wrap: wrap;

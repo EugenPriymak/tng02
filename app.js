@@ -8,7 +8,7 @@ $(function() {
     
     let nav = $("#nav");
     let navToogle = $("#navToggle");
-    
+
     checkScroll(scrollPos, introH);
     
 
@@ -52,4 +52,23 @@ $(function() {
         nav.toggleClass("show");
 
     })
+
+    // Reviews
+
+    let slider = $("#reviewsSlider");
+
+    slider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false
+      });
+              
+
+
+
+
+
+
 });
