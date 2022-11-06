@@ -1,10 +1,13 @@
 $(function() {
-
+    
     // fixed header
     let header = $("#header");
     let intro = $("#intro");
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
+    
+    let nav = $("#nav");
+    let navToogle = $("#navToggle");
     
     checkScroll(scrollPos, introH);
     
@@ -32,15 +35,21 @@ $(function() {
 
         let elementId =$(this).data('scroll');
         let elementOffset = $(elementId).offset().top;
+
+        nav.removeClass("show");
         console.log(elementOffset);
 
         $("html, body").animate({
             scrollTop: elementOffset -70
         }, 700)
-
-
-
-
     });
 
+    // Nav Toggle
+
+    navToogle.on("click", function(event){
+        event.preventDefault();
+
+        nav.toggleClass("show");
+
+    })
 });
